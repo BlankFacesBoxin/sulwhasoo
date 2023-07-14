@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설화</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 640px)">
+
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="mainBanner">
+      <div class="headerArea">
+        <header>
+          <h1 class="logo"><a href="#"><span class="blind">Sulwhasoo</span></a></h1>
+          <section class="mobileMenu">
+            <button class="monu_open" onclick="monuOpen()">
+              <i class="xi-bars"></i></button>
+              <div class="mo_serch">
+                <a href="#"></a>
+              </div>
+            <div class="monu">
+              <div class="monu_header">
+                <img src="img/sulwhasoo_orange_logo_220902.png" alt="">
+                <button class="monu_close" onclick="monuClose()"><i class="xi-close"></i></button>
+              </div>
+              <div class="monu_body">
+                <ul>
+                  <li>윤조</li>
+                  <li>자음생</li>
+                  <li>베스트</li>
+                  <li>제품</li>
+                  <li>스파</li>
+                  <li>플래그십 스토어</li>
+                  <li>ABOUT 설화수</li>
+                </ul>
+              </div>
+              <div class="monu_footer">
+                <div class="monu_join">
+                  <span>로그인</span>
+                  <span>매장찾기</span>
+                </div>
+                <div class="monu_lang">
+                  <span>LANGUAGE</span>
+                  <span>한국/한국어<i class="xi-plus"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="mo_serch">
+              <a href="#"></a>
+            </div>
+          </section>
+          <ul class="lang">
+            <li><a href="#">한국/한국어</a>
+              <i class="xi-angle-down-thin"></i>
+              <i class="xi-angle-up-thin"></i>
+              <div class="langDown">
+                <ul>
+                  <li><a href="">한국/한국어</a></li>
+                  <li><a href="">International/English</a></li>
+                  <li><a href="">中国大陆/中文</a></li>
+                  <li><a href="">中國香港/繁體中文</a></li>
+                  <li><a href="">Singapore/English</a></li>
+                  <li><a href="">Malaysia/English</a></li>
+                  <li><a href="">Việt Nam/Tiếng Việt</a></li>
+                  <li><a href="">Indonesia/Bahasa Indonesia</a></li>
+                  <li><a href="">ประเทศไทย/ไทย</a></li>
+                  <li><a href="">USA/English</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <nav>
+            <ul class="gnb">
+              <li><a href="#">윤조</a></li>
+              <li><a href="#">자음생</a></li>
+              <li><a href="#">베스트</a></li>
+              <li class="gnb_under">
+                <a href="#">제품</a>
+                <ul>
+                  <li><a href="#">스킨케어</a></li>
+                  <li><a href="#">메이크업</a></li>
+                  <li><a href="#">남성</a></li>
+                </ul>
+              </li>
+              <li class="gnb_under">
+                <a href="#">스파</a>
+                <ul>
+                  <li><a href="#">소개</a></li>
+                  <li><a href="#">스파 프로그램</a></li>
+                  <li><a href="#">예약</a></li>
+                  <li><a href="#">매장 찾기</a></li>
+                </ul>
+              </li>
+              <li class="gnb_under">
+                <a href="#">플러그십 스토어</a>
+                <ul>
+                  <li><a href="#">설화수 북촌</a></li>
+                  <li><a href="#">설화수 도산</a></li>
+                </ul>
+              </li>
+              <li class="gnb_last">
+                <a href="#">ABOUT 설화수</a>
+                <ul id="brand">
+                  <li>
+                    <a href="#">브랜드 스토리</a>
+                    <ul>
+                      <li><a href="#">브랜드 블리프</a></li>
+                      <li><a href="#">브랜드 캠페인</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">브랜드 엠버서더</a>
+                    <ul>
+                      <li><a href="#">로제</a></li>
+                      <li><a href="#">틸다 스윈튼</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">ART</a>
+                    <ul>
+                      <li><a href="#">설화문화전</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">HERITAGE</a>
+                    <ul>
+                      <li><a href="#">SINCE 1932</a></li>
+                      <li><a href="#">명작컬렉션</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <p>
+            <span><a href="#">매장찾기</a></span>
+            <span><a href="#">구매하기</a></span>
+            <i class="xi-search"></i>
+          </p>
+        </header>
+        <div class="bg_gnb"></div>
+        <div class="bg_last"></div>
+      </div>
+      <!-- swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg01">
+            <div class="bg_text">
+              <p>NEW BRAND FILM</p>
+              <p>인삼, 아름다움 그리고 설화수</p>
+            </div>
+          </div>
+          <div class="swiper-slide bg02">
+            <div class="bg_text">
+              <p>NEW GLOBAL AMBASSADOR</p>
+              <p>설화수, 그리고 TILDA</p>
+            </div>
+          </div>
+          <div class="swiper-slide bg03">
+            <div class="bg_text">
+              <p>Sulwhasoo Flagship Store</p>
+              <p>ROSE in BUKCHON</p>
+            </div>
+          </div>
+          <div class="swiper-slide bg04">
+            <div class="bg_text">
+              <p>Concentranted Ginseng Renewing Cream EX</p>
+              <p>자음생크림</p>
+            </div>
+          </div>
+          <div class="swiper-slide bg05">
+            <div class="bg_text">
+              <p>SULWHASOO FIRST CARE ACTIVATING SERUM VI</p>
+              <p>윤조에센스 6세대</p>
+            </div>
+          </div>
+          <div class="swiper-slide bg06">
+            <div class="bg_text">
+              <p>Amore mall (6.16-6.28)</p>
+              <p>설화수 X 아세페 단독 혜택</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </div>
+    <section class="mainPage">
+      <div class="mainArea">
+        <h2>설화수 추천</h2>
+        <div class="multiple-items01">
+          <div class="main_bg">
+            <a href="#">
+              <div class="main_img">
+                <img src="img/mA01.jpg" alt="">
+              </div>
+              <div class="main_text">
+                <h4>윤조에센스 6세대</h4>
+                <p>First Care Activating Serum VI</p>
+                <span>140,000원</span>
+              </div>
+            </a>
+          </div>
+          <div class="main_bg">
+            <a href="#">
+              <div class="main_img">
+                <img src="img/mA02.jpg" alt="">
+              </div>
+              <div class="main_text">
+                <h4>자음생크림</h4>
+                <p>Concentrated Ginseng Renewing Cream EX</p>
+                <span>270,000원</span>
+              </div>
+            </a>
+          </div>
+          <div class="main_bg">
+            <a href="#">
+              <div class="main_img">
+                <img src="img/mA03.jpg" alt="">
+              </div>
+              <div class="main_text">
+                <h4>자음생세럼</h4>
+                <p>Concentrated Ginseng Renewing Serum EX</p>
+                <span>220,000원</span>
+              </div>
+            </a>
+          </div>
+          <div class="main_bg">
+            <a href="#">
+              <div class="main_img">
+                <img src="img/mA04.jpg" alt="">
+              </div>
+              <div class="main_text">
+                <h4>순행클렌징오일</h4>
+                <p>Gentle Cleansing Oil</p>
+                <span>47,000원</span>
+              </div>
+            </a>
+          </div>
+          <div class="main_bg">
+            <a href="#">
+              <div class="main_img">
+                <img src="img/mA05.jpg" alt="">
+              </div>
+              <div class="main_text">
+                <h4>순행클렌징폼</h4>
+                <p>Gentle Cleaning Foam</p>
+                <span>42,000원</span>
+              </div>
+            </a>
+          </div>
+          <div class="main_bg">
+            <a href="#">
+              <div class="main_img">
+                <img src="img/mA06.jpg" alt="">
+              </div>
+              <div class="main_text">
+                <h4>백삼팩</h4>
+                <p>White Ginseng Radiance Refining Mask</p>
+                <span>72,000원</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#">
+        <div class="mainBestseller">
+          <div class="bestseller_text">
+            <p>베스트 셀러</p>
+            <p>
+              건강하게 빛나고 힘 있게 채우는<br>
+              설화수의 시그니처 케어
+            </p>
+            <span>자세히 보기</span>
+          </div>
+        </div>
+      </a>
+      <div class="mainSeason">
+        <h2>설화수 시즌추천</h2>
+        <div class="season_img">
+          <div class="s img01">
+            <a href="#">
+              <img src="img/mA03.jpg" alt="">
+              <div class="sa_text">
+                <h4>자음생세럼</h4>
+                <p>Concentrated Ginseng Renewing Serum EX</p>
+                <span>220,000원</span>
+              </div>
+            </a>
+          </div>
+          <div class="s_img02">
+            <div class="s_text">
+              <h4>자음생듀오</h4>
+              <p>
+                안티에이징의 결정체, 진세노믹스<br>
+                자음생듀오로 피부 자상력을 키워주세요.
+            </div>
+            </p>
+          </div>
+          <div class="s img03">
+            <a href="#">
+              <img src="img/mA02.jpg" alt="">
+              <h4>자음생크림</h4>
+              <p>Concentrated Ginseng Renewing Cream EX</p>
+              <span>270,000원</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mainPlace">
+        <div class="mp left">
+          <a href="#">
+            <img src="img/Nstore.jpg" alt="">
+            <div class="mp_text">
+              <h3>설화수 북촌 플래그십 스토어</h3>
+              <span>자세히 보기</span>
+            </div>
+          </a>
+        </div>
+        <div class="mp right">
+          <a href="#">
+            <img src="img/Dstore.jpg" alt="">
+            <div class="mp_text">
+              <h3>설화수 도산 플래그십 스토어</h3>
+              <span>자세히 보기</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mainAD">
+        <h2>#With Sulwhasoo</h2>
+        <div class="center">
+          <div>
+            <img src="img/ad1.jpg" alt="">
+            <div class="ad_border">
+              <p>
+                @mellor2735<br>
+                #유료광고 / 지친 일상 속 힐링을 찾아
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/ad3.jpg" alt="">
+            <div class="ad_border">
+              <p>
+                @mellor2735<br>
+                #유료광고 / 지친 일상 속 힐링을 찾아
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/ad4.jpg" alt="">
+            <div class="ad_border">
+              <p>
+                @mellor2735<br>
+                #유료광고 / 지친 일상 속 힐링을 찾아
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/ad6.jpg" alt="">
+            <div class="ad_border">
+              <p>
+                @mellor2735<br>
+                #유료광고 / 지친 일상 속 힐링을 찾아
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/ad7.jpg" alt="">
+            <div class="ad_border">
+              <p>
+                @mellor2735<br>
+                #유료광고 / 지친 일상 속 힐링을 찾아
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/ad8.jpg" alt="">
+            <div class="ad_border">
+              <p>
+                @mellor2735<br>
+                #유료광고 / 지친 일상 속 힐링을 찾아
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/ad9.jpg" alt="">
+            <div class="ad_border">
+              <p>
+                @mellor2735<br>
+                #유료광고 / 지친 일상 속 힐링을 찾아
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/ad10.jpg" alt="">
+            <div class="ad_border">
+              <p>
+                @mellor2735<br>
+                #유료광고 / 지친 일상 속 힐링을 찾아
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="top_foot">
+        <ul>
+          <li><a href="">회사소개</a></li>
+          <li><a href="">서비스이용약관</a></li>
+          <li><a href="">UGC이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">영상정보처리방침</a></li>
+          <li><a href="">사이트맵</a></li>
+          <li><a href="">로그인</a></li>
+        </ul>
+        <div class="sns_area">
+          <img src="img/web-accessibility-certification-mark_kr_230203.png" alt="">
+          <img src="img/facebookLogo.png" alt="">
+          <img src="img/instaLogo.png" alt="">
+          <img src="img/youtubeLogo.png" alt="">
+          <img src="img/kakaoChannelLogo.png" alt="">
+        </div>
+      </div>
+      <div class="bot_foot">
+        <p>
+          고객서비스센터(수신자요금부담) : 080-023-5454
+          (월~금: AM 09:00~PM 06:00)
+        </p>
+        <div class="mobile_p">
+          <p>
+            © AMOREPACIFIC CORPORATION. All rights reserved.
+          </p>
+          <button class="over" id="open" onclick="showDetail()"><i class="xi-angle-down-thin"></i></button>
+      </div>
+      <div id="desc" class="bot_mobileFoot">
+        <ul>
+          <li><a href="">회사소개</a></li>
+          <li><a href="">서비스이용약관</a></li>
+          <li><a href="">UGC이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">영상정보처리방침</a></li>
+          <li><a href="">사이트맵</a></li>
+        </ul>
+        <p>
+          고객서비스센터(수신자요금부담) : 080-023-5454
+          (월~금: AM 09:00~PM 06:00)
+        </p>
+        <img src="img/web-accessibility-certification-mark_kr_230203.png" alt="">
+        <button id="close" onclick="closeDetail()"><i class="xi-angle-up-thin"></i></button>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
